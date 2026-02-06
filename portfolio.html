@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Jack Deguara</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contactme.html">Contact Me</a>
+        </nav>
+
+        <div class="page-links">
+            <a href="https://github.com/jadegua" target="_blank"><img id="github-link" src="Images/Logos/GitHub_Invertocat_Black_Clearspace.svg" alt="My Github Profile"></a>
+            <a href="https://www.linkedin.com/in/jack-deguara-09008a2b8/" target="_blank"><img id="linkedin-link" src="Images/Logos/InBug-Black.png" alt="My Linkedin Profile"></a>            
+        </div>
+    </header>
+
+    <main>
+        <section class="project">
+            <div class="project-top">
+                <div class="project-left">
+                    <div class="project-text">
+                        <h2>Project 1 - Top Down Driving Game</h2>
+                        <p>
+                            I developed a top-down driving game for my A-Level Computer Science coursework. Within a limited timeframe, 
+                            I focussed on implementing core gameplay mechanics, including vehicle movement with lane changing, 
+                            AI traffic that spawned ahead of the player with variable speeds and random lane changes, collision detection with a vehicle health system, 
+                            and power-ups to make the game more engaging. The project involved designing and implementing the game's logic using Unity to manage user input, 
+                            sprites and physics, and C# to create scripts to control the games behaviour. Throughout the project, 
+                            I improved my problem-solving skills, gained experience working within a development timeframe while documenting the process, and gained a stronger understanding of game development as a whole.
+
+
+                        </p>
+                    </div>
+                    <img class="project-text-img" src="Images/Projects/TopDownGame-Screenshot-1.png" alt="Gameplay Screenshot">
+                </div>
+            <img class="project-code-img" src="Images/Projects/TopDownGame-Screenshot-Code.png" alt="A-Level Game Code Screenshot">
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-top">
+                <div class="project-left">
+                    <div class="project-text">
+                        <h2>Project 2 - RAW Photo Culling Script</h2>
+                        <p>This project was aimed to solve a problem that I came across during my photography work. 
+                            While culling images taken with my DSLR camera, which captures images in two different file formats (RAW and JPEG), 
+                            I found it time-consuming to manually identify and delete RAW files corresponding to unwant3d JPEGs. To solve this problem, 
+                            I created a python script that allows me to specify the exact directory of the folder that I was culling, identify and count the number of JPEG and RAW files, 
+                            and automatically move any RAW files that do not have an associated JPEG into a separate directory named "Temp RAW Files". 
+                            This small automation helped to streamline my photography workflow and reduce the amount of time required to manage large photo collections and minimise the risk of accidently deleting important files.              
+                            <br><br>
+                            I found this project interesting as I explored new libraries and gained experience with file management in Python. 
+                            I used libraries such as os, fnmatch, and shutil to navigate directories, find files by their extension, and move them between folders. 
+                            The script compares RAW (.nef) files against their corresponding JPEG files and moves them into a temporary folder instead of deleting them straight away. 
+                            Implementing this ensured that no important files were permanently lost, allowing me to delete the temporary folder when ready.
+                        </p>
+                    </div>
+                    <img class="project-text-img" src="Images/Projects/RAWculling-Screenshot-1.png" alt="Gameplay Screenshot">
+                    <img class="project-text-img" src="Images/Projects/RAWculling-Screenshot-2.png" alt="Gameplay Screenshot">
+                </div>
+                <img class="project-code-img" src="Images/Projects/RAWculling-Screenshot-Code.png" alt="Raw Culling Code Screenshot">
+        </section>
+        
+        <section class="project">
+            <div class="project-top">
+                <div class="project-left">
+                    <div class="project-text">
+                        <h2>Project 3 - Monty Hall Problem</h2>
+                        <p>During sixth form, I created a simulation of the Monty Hall problem to explore the counter intuitive probability behind the game show scenario. 
+                            I modelled the rules of the problem in python, which repeatedly runs trials where the player either switches or stays with their initial choice. 
+                            By simulating the experiment thousands of times, the projects results demonstrates that switching doors results in a higher probability of winning.</p>
+                        <blockquote>f.nicholas - <em>"Jack's interpretation of the Monty Hall Problem sucesfully... "</em></blockquote>
+                    </div>
+                    <img class="project-text-img" src="Images/Projects/MontyHallProblem-Screenshot.png" alt="Monty Hall Problem Gameplay Screenshot">
+                </div>
+            <img class="project-code-img" src="Images/Projects/MontyHallProblem-Code.png" alt="Monty Hall Problem Code Screenshot">
+            </div>
+        </section>
+        
+        <button class="mode-button" onclick="changeTheme()"><img id="theme-icon" src="Images/Logos/dark-mode.png" alt="Dark Mode Icon"></button>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Email: <a href="mailto:250094998@aston.ac.uk?subject=Project%20Enquiry" target="_blank" rel="noopener noreferrer">250094998@aston.ac.uk</a></li>
+            <li>SUN: 250094998</li>
+        </ul>
+    </footer>
+</body>
+</html>

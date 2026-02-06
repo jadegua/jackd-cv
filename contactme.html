@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Jack Deguara</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contactme.html" class="active">Contact Me</a>
+        </nav>
+
+        <div class="page-links">
+            <a href="https://github.com/jadegua" target="_blank"><img id="github-link" src="Images/Logos/GitHub_Invertocat_Black_Clearspace.svg" alt="My Github Profile"></a>
+            <a href="https://www.linkedin.com/in/jack-deguara-09008a2b8/" target="_blank"><img id="linkedin-link" src="Images/Logos/InBug-Black.png" alt="My Linkedin Profile"></a>            
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-me">
+            <h2>Contact Details:</h2>
+            <ul>
+                <li>Name: Jack Deguara</li>
+                <li>Email: <a href="mailto:250094998@aston.ac.uk?subject=Project%20Enquiry" target="_blank" rel="noopener noreferrer">250094998@aston.ac.uk</a></li>
+                <li>SUN: 250094998</li>
+            </ul>
+
+            <form class="contact-form-container" onsubmit="return validateForm()">
+                <h1>Contact Me</h1>
+                
+                <label>First name:<input type="text" name="first-name" required></label>
+                <label>Email:<input type="email" name="email" id="email" required></label>
+                <label>Confirm Email:<input type="email" id="confirm-email" name="confirm-email" required></label>
+                <label>Phone Number:<input type="tel" name="phone" inputmode="numeric" pattern="[0-9]*"></label>
+                <label>Project Date:<input type="date" id="project-date" name="project-date" required></label>
+                <label>Project Duration:
+                    <div clss="duration-group">
+                        <input type="number" name="project-duration" min="1" required>
+                        <select id="duration-unit" required>
+                            <option value="duration-days">Days</option>
+                            <option value="duration-weeks">Weeks</option>
+                            <option value="duration-months">Months</option>
+                            <option value="duration-years">Years</option>
+                        </select>
+                    </div>
+                </label>
+                <label>Project Description:<textarea name="project-description" rows="8" required></textarea></labeL>
+
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+
+                <label><input type="radio" name="contact-method" value="contact-phone">Call</label>
+                <label><input type="radio" name="contact-method" value="contact-text">Text</label>
+                <label><input type="radio" name="contact-method" value="contact-email">Email</label>
+
+            </fieldset>
+
+            <p id="error-message"></p>
+
+            <button id="submit" type="submit">Send Enquiry</button>
+
+            </form>
+        </section>
+        <button class="mode-button" onclick="changeTheme()"><img id="theme-icon" src="Images/Logos/dark-mode.png" alt="Dark Mode Icon"></button>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Email: <a href="mailto:250094998@aston.ac.uk?subject=Project%20Enquiry" target="_blank" rel="noopener noreferrer">250094998@aston.ac.uk</a></li>
+            <li>SUN: 250094998</li>
+        </ul>
+    </footer>
+</body>
+</html>
